@@ -5,8 +5,7 @@ function validParentheses(parens) {
     if (parens[i] === ")") check--;
     if (check < 0) return false;
   }
-  if (check === 0) return true;
-  else return false;
+  return check === 0;
 }
 
 console.log(validParentheses("()"));
