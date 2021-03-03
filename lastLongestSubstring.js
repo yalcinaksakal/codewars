@@ -15,14 +15,14 @@ function findLastLongestNAlphaSubString(str, numberOfDistincts) {
 
 console.log(findLastLongestNAlphaSubString("ABCBCCCCDDDDEEF", 3));
 /*
-
-# Problem: Implement a function that takes an input string 'str' and an integer 'n',
-#          and returns the last longest substring with at most 'n'
-#          distinct alphabets.
-
-# Example 1
-# *str = "ABCBCCCCDDDDEEF"
-#      findLastLongestNAlphaSubString(str, 1) returns "DDDD"
-#      findLastLongestNAlphaSubString(str, 2) returns "CCCCDDDD"
-#      findLastLongestNAlphaSubString(str, 3) returns "BCBCCCCDDDD"
+# Problem: Implement a function that takes an input string 'str' and an integer 'n',
+#          and returns the last longest substring with at most 'n'
+#          distinct alphabets.
+# Example 1
+# *str = "ABCBCCCCDDDDEEF"
+#      findLastLongestNAlphaSubString(str, 1) returns "DDDD"
+#      findLastLongestNAlphaSubString(str, 2) returns "CCCCDDDD"
+#      findLastLongestNAlphaSubString(str, 3) returns "BCBCCCCDDDD"
 */
+
+
