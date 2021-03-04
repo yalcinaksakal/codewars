@@ -7,17 +7,15 @@ function startWalk(pos, next) {
   if (next === word.length) return true;
   for (let i = 0; i < n.length; i++) {
     const el = n[i];
-    //check if neighbour is in board dimenions
-    if (pos + el >= 0 && pos + el < board.length) {
-      if (board[pos + el] === word[next]) {
-        //visited
-        board[pos + el] = "-" + board[pos + el];
-        if (startWalk(pos + el, next + 1)) return true;
-        //unvisit
-        board[pos + el] = board[pos + el].slice(1);
-        //if we are at second char(next=1), we returned back to start pos and tried all its neighbours than we couldn't find word on board
-        if (next === 1 && i === n.length - 1) return false;
-      }
+
+    if (board[pos + el] === word[next]) {
+      //visited
+      board[pos + el] = "-" + board[pos + el];
+      if (startWalk(pos + el, next + 1)) return true;
+      //unvisit
+      board[pos + el] = board[pos + el].slice(1);
+      //if we are at second char(next=1), we returned back to start pos and tried all its neighbours than we couldn't find word on board
+      if (next === 1 && i === n.length - 1) return false;
     }
   }
 }
