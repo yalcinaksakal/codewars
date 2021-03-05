@@ -43,7 +43,7 @@ var getIntersectionNode = function (headA, headB) {
 
     const skipA = lengthA > lengthB ? dif + skip : skip;
     const skipB = lengthB > lengthA ? dif + skip : skip;
-  }
+  
   return headA;
 };
 console.log(getIntersectionNode(headA, headB));
